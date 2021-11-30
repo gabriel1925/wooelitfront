@@ -1,0 +1,6 @@
+body{
+    /* the background has a horizontal degrade from red to orange */
+    background: linear-gradient(to right, red, orange);
+    /* the background has a vertical degrade from red to orange */
+    /* background: linear-gradient(to bottom, red, orange); */
+}

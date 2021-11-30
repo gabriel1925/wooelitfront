@@ -16,10 +16,18 @@ import './App.css'
 function App(props) {
   return (
     <React.Fragment>
-      <TodoCounter />
-      <TodoSearch />
-      <TodoList/>
-      <CreateTodoButton />
+      <div className="container">
+        <div className="row mt-3">
+          <div className="col-5 me-5 p-2 colRow">
+            <TodoCounter />
+            <TodoSearch />
+          </div>
+          <div className="col-5 ms-5 p-2 colRow"> 
+            <TodoList/>
+            <CreateTodoButton />
+          </div>
+        </div>
+      </div>
     </React.Fragment>
   );
 }

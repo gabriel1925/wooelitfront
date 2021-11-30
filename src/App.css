@@ -1,0 +1,45 @@
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.colRow{
+  /* background transparency white 0.7 and effect cristal apple */
+  background: rgba(233, 156, 84, 0.6);
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  background-blend-mode: overlay;
+  /* border */
+  border: 1px solid #ccc;
+  /* border-radius */
+  border-radius: 10px;
+  /* box-shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* padding */
+  padding: 20px;
+  /* margin */
+  margin: 20px;
+
+
+    
+}
+
+.todo{
+  background: rgba(233, 156, 84, 0.6);
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  background-blend-mode: overlay;
+  /* border */
+  border: 1px solid #ccc;
+  /* border-radius */
+  border-radius: 10px;
+  /* box-shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  /* padding */
+  padding: 20px;
+  /* margin */
+  margin: 20px;
+}
