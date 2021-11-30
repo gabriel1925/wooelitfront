@@ -1,20 +1,13 @@
 import React from "react";
 import './TodoItem.css';
-
+let completar =(completado)=>{return completado?'completed':'not-completed'}
 function TodoItem(props) {
   return (
     <li className="todo-item">
-      <span className={() => {
-        if (props.completed) {
-          return "completed"
-        } else {
-          return ""
-        }
-      }}>
-        {props.text} {props.completed.completed}</span>
-      {console.log(props.completed)}
+      <span className={completar(props.completed)}>
+        {props.text}</span>
 
-      <li className="fa fa-times-circle trasIconRight"></li>
+      <i className="fa fa-times-circle trasIconRight"></i>
     </li>
   );
 }
