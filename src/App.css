@@ -43,3 +43,6 @@
   /* margin */
   margin: 20px;
 }
+.searchHeight{
+  max-height: 480px;
+}

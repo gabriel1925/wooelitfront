@@ -1,0 +1,11 @@
+/* aling button center  */
+.addButton{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.btnAdd{
+    width: 45px;
+    height: 45px;
+    padding: 0 !important;    
+}

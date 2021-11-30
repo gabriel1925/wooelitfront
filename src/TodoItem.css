@@ -1,0 +1,22 @@
+/* li Round item with trash   */
+.todo-item {
+  text-align: center;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  background: rgb(240, 222, 197);
+  border-radius: 3px;
+  position: relative;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s ease-out;
+  list-style: none;
+  color: black;
+}
+.trasIconRight{
+  position: absolute;
+  right: 10px;
+  top: -25%;
+  cursor: pointer;
+  color: brown;
+}

@@ -1,3 +1,11 @@
 .centerTodoList {
     text-align: center;
 }
+/*aling center content ul.todo-list */
+ul.todo-list {
+    width: 100%;
+    padding-left: 0;
+}
+.completed{
+    text-decoration: line-through;
+}

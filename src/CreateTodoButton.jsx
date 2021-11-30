@@ -1,8 +1,15 @@
 import React from "react";
-
+import './CreateTodoButton.css';
 function CreateTodoButton(props) {
   return (
-    <button>+</button>
+    <React.Fragment>
+      <div className="w-100 addButton">
+       <button className="btn btn-success rounded-circle btnAdd"><i className="fa fa-plus createButtonIcon"></i></button>
+      </div>
+    </React.Fragment>
+    
+
+
   );
 }
 

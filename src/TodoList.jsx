@@ -16,9 +16,9 @@ function TodoList(props) {
     <React.Fragment>
       <h2 className="centerTodoList">TODOs</h2>
       <hr />
-      <ul>
+      <ul className="todo-list">
           {todos.map((todo,index) => (
-              <TodoItem key={index} text={todo.text} todo={todo} />
+              <TodoItem key={index} text={todo.text} completed={todo.completed} />
           ))}
       </ul>
     </React.Fragment>
