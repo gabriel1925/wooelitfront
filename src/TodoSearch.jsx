@@ -2,6 +2,9 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "./TodoSearch.css";
 function TodoSearch(props) {
+  let onSearchValueChange = (event)=>{
+    console.log(event.target.value);
+  }
   return (
     <React.Fragment>
       {/* Create Input and integrated Button Search*/}
@@ -10,7 +13,7 @@ function TodoSearch(props) {
           type="text"
           className="form-control "
           placeholder="Busqueda"
-          // onChange={props.handleChange}
+          onChange={onSearchValueChange}
         />
         <div className="input-group-append">
           <Button

@@ -10,13 +10,26 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: background 0.2s ease-out;
   list-style: none;
-  cursor: pointer;
-
 }
-.trasIconRight{
+.trashIconRight{
   position: absolute;
   right: 10px;
   top: -25%;
+  cursor: pointer;
+  color: brown;
+}
+.checkIconIncomplete{
+  position: absolute;
+  left: 10px;
+  top: 25%;
+  cursor: pointer;
+  color: green;
+}
+.checkIconComplete{
+  position: absolute;
+  cursor: pointer;
+  left: 10px;
+  top: 25%;
   cursor: pointer;
   color: brown;
 }

@@ -1,5 +1,12 @@
 body{
     /* the background has a horizontal degrade from red to orange */
     /* the background has a vertical degrade from red to orange */
+    background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,127,0,1) 50%, rgba(255,0,0,1) 100%);
     /* background: linear-gradient(to bottom, red, orange); */
+}
+/* if mobile o tablet backgroun white */
+@media only screen and (max-width: 768px) {
+    body{
+        background: white;
+    }
 }

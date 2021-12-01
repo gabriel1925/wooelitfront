@@ -27,9 +27,24 @@
 /* media query mobile and tablet*/
 @media only screen and (max-width: 768px) {
   .colRow{
-    max-width: 100%;
-    margin-left: 0 !important;
-    background-color: red;
+    width: 100% !important;
+    margin: 0 !important;
+    margin-bottom: 10px !important;
+    max-width: 100% !important;
+    background-color: white;
+    position: relative;
+    display: block;
+  }
+  .colRow:nth-child(even){
+    margin-bottom: 60px !important;
+    
+  }
+  .searchHeight{
+    max-height: 240px;
+  }
+  .row{
+    margin: 0 !important;
+    margin-bottom: 150px !important;
   }
 }
 /* contairner-fluid backgroud graduate to right red orange */
