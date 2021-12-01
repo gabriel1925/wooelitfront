@@ -1,7 +1,6 @@
 /* li Round item with trash   */
 .todo-item {
   text-align: center;
-  border-bottom: 1px solid #ededed;
   margin-bottom: 10px;
   width: 100%;
   padding: 5px;
@@ -11,7 +10,8 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   transition: background 0.2s ease-out;
   list-style: none;
-  color: black;
+  cursor: pointer;
+
 }
 .trasIconRight{
   position: absolute;
@@ -19,4 +19,13 @@
   top: -25%;
   cursor: pointer;
   color: brown;
+}
+.completed{
+  text-decoration: line-through;
+  background: rgb(255, 99, 71);
+  color: #ccc;
+}
+.not-completed{
+  background: rgb(144, 238, 144);
+  color: rgb(2, 61, 14);
 }

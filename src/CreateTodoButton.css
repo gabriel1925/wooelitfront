@@ -1,11 +1,26 @@
-/* aling button center  */
-.addButton{
-    display: flex;
-    justify-content: center;
-    position: relative;
+/* aling button center button fixed */
+.create-todo-button {
+  position: fixed;
+  display: flex;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  background-color: #0e6fed;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  padding-left: 17.3px;
+  font-size: 18px;
+  transform: rotate(0);
+  transition:all 0.3s ease;
 }
-.btnAdd{
-    width: 45px;
-    height: 45px;
-    padding: 0 !important;    
+.create-todo-button:hover {
+  transform: rotate(224deg);
+}
+.create-todo-button:active {
+  background-color: red;
 }

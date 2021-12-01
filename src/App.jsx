@@ -16,16 +16,16 @@ import './App.css'
 function App(props) {
   return (
     <React.Fragment>
-      <div className="container">
-        <div className="row mt-3">
-          <div className="col-5 me-5 p-2 colRow searchHeight">
+      <div className="container-fluid">
+        <div className="row m-3">
+          <div className="col-sm-6 p-2 colRow searchHeight">
             <TodoCounter />
             <TodoSearch />
           </div>
-          <div className="col-5 ms-5 p-2 colRow "> 
+          <div className="col-sm-6 p-2 colRow "> 
             <TodoList/>
-            <CreateTodoButton />
           </div>
+            <CreateTodoButton />
         </div>
       </div>
     </React.Fragment>
