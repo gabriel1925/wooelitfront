@@ -17,10 +17,9 @@
   font-size: 18px;
   transform: rotate(0);
   transition:all 0.3s ease;
+  z-index: 10000 !important;
 }
-.create-todo-button:hover {
-  transform: rotate(224deg);
-}
-.create-todo-button:active {
-  background-color: red;
+ .activeButton{
+   background-color: red;
+   transform: rotate(224deg);
 }

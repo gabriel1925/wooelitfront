@@ -6,7 +6,7 @@ import { TodoList } from "./TodoList";
 import { CreateTodoButton } from "./CreateTodoButton";
 import './App.css'
 const defaultTodos = [
-  {text: "Cebolla", completed: false},
+  {text: " cosa Cebolla", completed: false},
   {text: "Tomate", completed: false},
   {text: "Aji", completed: true},
   {text: "Pimiento", completed: false},
@@ -20,7 +20,11 @@ function App(props) {
   const [todos, setTodos] = React.useState(defaultTodos);
   const [searchValue, setSearchValue] = React.useState('');
   const completedTodos = todos.filter(todo => !!todo.completed).length;
-  const todoTodos = todos.length
+  const todoTodos = todos.length;
+  const Searchtodo = todos.filter(todo => {
+    return todo.text.toLowerCase().includes(searchValue.toLowerCase());
+  });
+
 
   return (
     <React.Fragment>
@@ -37,9 +41,11 @@ function App(props) {
             />
           </div>
           <div className="col-sm-6 p-2 colRow "> 
-            <TodoList todos={todos}/>
+            <TodoList 
+            todos={Searchtodo}
+            />
           </div>
-            <CreateTodoButton />
+            <CreateTodoButton addTodo={setTodos} todos={todos} />
         </div>
       </div>
     </React.Fragment>
