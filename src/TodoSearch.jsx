@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "./TodoSearch.css";
-function TodoSearch(props) {
+function TodoSearch({searchValue, setSearchValue}) {
   let onSearchValueChange = (event)=>{
-    console.log(event.target.value);
+    setSearchValue(event.target.value);
   }
   return (
     <React.Fragment>
@@ -11,20 +11,22 @@ function TodoSearch(props) {
       <div className="input-group mb-3 opacity-90 backcolor">
         <input
           type="text"
-          className="form-control "
+          className="form-control"
           placeholder="Busqueda"
+          value={searchValue}
           onChange={onSearchValueChange}
         />
         <div className="input-group-append">
           <Button
             className="btn btn-secondary"
             type="button"
-            // onClick={props.handleClick}
           >
             <i className="fa fa-search" />
           </Button>
         </div>
       </div>
+      
+          <p>{searchValue} </p>
 
 
 
