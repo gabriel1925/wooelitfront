@@ -45,7 +45,7 @@ function CreateTodoButton({addTodo, todos}) {
           </Modal.Header>
 
           <Modal.Body>
-            <input type="text" className="form-control" placeholder="Nuevo Todo" onChange={ onTodoChange } />
+            <input type="text" className="form-control" placeholder="Nuevo TODO" onChange={ onTodoChange } />
           </Modal.Body>
 
           <Modal.Footer>

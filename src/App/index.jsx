@@ -1,9 +1,8 @@
 import React from "react";
-import { TodoCounter } from "./TodoCounter";
-import { TodoSearch } from "./TodoSearch";
-import { TodoList } from "./TodoList";
-// import { TodoItem } from "./TodoItem";
-import { CreateTodoButton } from "./CreateTodoButton";
+import { TodoCounter } from "../TodoCounter/";
+import { TodoSearch } from "../TodoSearch/";
+import { TodoList } from "../TodoList/";
+import { CreateTodoButton } from "../CreateTodoButton/";
 import './App.css'
 const defaultTodos = [
   {text: " cosa Cebolla", completed: false},
@@ -25,9 +24,19 @@ function App(props) {
     return todo.text.toLowerCase().includes(searchValue.toLowerCase());
   });
 
+  const completeTodo = (text) => {
+    const  todoIndex = todos.findIndex(todo => todo.text === text);
+    const newTodos = [...todos];
+    newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
+    setTodos(newTodos);
+  };
+
+  const deleteTodo = (text) => {
+    const newTodos = todos.filter(todo => todo.text !== text);
+    setTodos(newTodos);
+  };  
 
   return (
-    <React.Fragment>
       <div className="container-fluid">
         <div className="row m-3">
           <div className="col-sm-6 p-2 colRow searchHeight">
@@ -43,12 +52,13 @@ function App(props) {
           <div className="col-sm-6 p-2 colRow "> 
             <TodoList 
             todos={Searchtodo}
+            completeTodo={completeTodo}
+            deleteTodo={deleteTodo}
             />
           </div>
             <CreateTodoButton addTodo={setTodos} todos={todos} />
         </div>
       </div>
-    </React.Fragment>
   );
 }
 

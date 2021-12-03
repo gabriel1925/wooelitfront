@@ -26,7 +26,6 @@ function TodoSearch({searchValue, setSearchValue}) {
         </div>
       </div>
       
-          <p>{searchValue} </p>
 
 
 
