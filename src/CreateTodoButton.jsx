@@ -49,8 +49,8 @@ function CreateTodoButton({addTodo, todos}) {
           </Modal.Body>
 
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>Close</Button>
-            <Button variant="success" onClick={addTodoHandler}>Save changes</Button>
+            <Button variant="secondary" onClick={handleClose}>Cerrar</Button>
+            <Button variant="success" onClick={addTodoHandler}>Guardar</Button>
           </Modal.Footer>
         </Modal.Dialog>
       </Modal>
