@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
 import './CreateTodoButton.css';
-function CreateTodoButton({addTodo, todos}) {
+function CreateTodoButton({addTodo, todos, saveTodos}) {
   const [show, setShow] = React.useState(false);
   const [todo, setTodo] = React.useState({text: '', completed: false});
   const handleClose = () => setShow(false);
@@ -13,17 +13,17 @@ function CreateTodoButton({addTodo, todos}) {
   }
   const onTodoChange = (e)=>{
     if (e.target.value !== '') {
-      console.log(e.target.value);
+      // console.log(e.target.value);
     setTodo({text: e.target.value, completed: false});
     }else{
       setTodo({text: '', completed: false});
     }
-  }
+  } 
   const addTodoHandler = ()=>{
     if(todo.text !== ''){
       let todosAll = [...todos, todo];
-      console.log(todosAll);
-    addTodo(todosAll);
+      // console.log(todosAll);
+    saveTodos(todosAll);
     handleClose();
     }else{
       alert('Please enter todo');

@@ -1,11 +1,19 @@
 import React from "react";
+import { TodoContext } from '../TodoContext/';
 
-function TodoCounter({ total, completed}) {
+function TodoCounter({ total, completed }) {
   return (
-    <React.Fragment>
-      <h2 className="Title">Has completado {completed} de {total} TODOs </h2>
-      <hr />
-    </React.Fragment>
-    );
+    <TodoContext.Consumer>
+      {({ 
+      completedTodos,
+      todoTodos
+     }) => (
+        <React.Fragment>
+          <h2 className="Title">Has completado {completedTodos} de {todoTodos} TODOs </h2>
+          <hr />
+        </React.Fragment>
+      )}
+    </TodoContext.Consumer>
+  );
 }
-export {TodoCounter};
+export { TodoCounter };
